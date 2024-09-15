@@ -1,0 +1,81 @@
+{
+  "name": "zoterocite",
+  "displayName": "zoterocite",
+  "description": "citation connector",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "zoterocite.showCitationPicker",
+        "title": "Zoterocite input box"
+      },
+      {
+        "command": "zoterocite.toggleBibtexHandling",
+        "title": "Toggle Bibtex Handling for Zoterocite"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "zoterocite.showCitationPicker",
+        "key": "ctrl+shift+z",
+        "when": "editorTextFocus"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "zoterocite-activitybar",
+          "title": "ZoteroCite",
+          "icon": "$(library)"
+        }
+      ]
+    },
+    "views": {
+      "zoterocite-activitybar": [
+        {
+          "id": "Bibtex-Citations-view",
+          "name": "Bibtex Citations view",
+          "contextualTitle": "Bibtex Citations"
+        },
+        {
+          "id": "Zotero-Citations-view",
+          "name": "Zotero Citeations view",
+          "contextualTitle": "Zotero Citations"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.93.0",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bibtex-parse": "^2.1.0",
+    "glob": "^11.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
