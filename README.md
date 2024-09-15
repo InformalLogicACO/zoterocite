@@ -26,20 +26,15 @@ Before using **zoterocite**, ensure you have the [Better Bibtex](https://github.
 
 ## Views
 
-- **Bibtex Citations view**: Manage and view your Bibtex citations.
-- **Zotero Citations view**: Manage and view your Zotero citations.
+- **Bibtex Citations view**: View your Bibtex citations.
+- **Zotero Citations view**: View your Zotero citations.
 
 ## Installation
 
-To install the plugin, ensure you have Visual Studio Code version 1.93.0 or higher.
+To install the plugin, ensure you have Visual Studio Code installed and the Zotero application running on your system. You can download Zotero from the [official website](https://www.zotero.org/).
 
-## Development
+Once you have Zotero installed, follow these steps to install the **zoterocite** plugin:
 
-
-### Dependencies
-
-- **Development**: TypeScript, ESLint, Mocha, and VS Code test utilities.
-- **Runtime**: Axios, Bibtex-parse, Glob, and Node-fetch.
 
 ## Contributing
 
