@@ -8,6 +8,8 @@
 
 Before using **zoterocite**, ensure you have the [Better Bibtex](https://github.com/retorquere/zotero-better-bibtex) plugin installed in Zotero. This plugin is essential!
 
+__Zotero must be open!__
+
 
 ## Features
 
