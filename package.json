@@ -3,6 +3,7 @@
   "displayName": "zoterocite",
   "description": "citation connector",
   "publisher": "AkademieOlymp-Michael",
+  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/InformalLogicACO/zoterocite"},
